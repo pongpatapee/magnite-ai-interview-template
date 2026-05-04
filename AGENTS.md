@@ -20,7 +20,7 @@ Layout: `backend/`, `frontend/`.
 
 ## Frontend (React / TypeScript)
 
-- **Package manager**: **`pnpm`** only (`pnpm install`, `pnpm dev`, `pnpm build`, …). No npm/yarn as primary for this project.
+- **Package manager**: **`npm`** (matches Vite `create` defaults). Use `npm install`, `npm run dev`, `npm run build`, etc.
 
 ## How agents should communicate (interview mode)
 
