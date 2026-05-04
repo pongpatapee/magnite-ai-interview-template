@@ -16,11 +16,13 @@ Layout: `backend/`, `frontend/`.
 ## Backend (Python / FastAPI)
 
 - **Package/runtime**: **`uv`** — deps, venv, runs (`uv run`, `uv sync`, etc.). Don’t introduce pip-only workflows as default.
+- **Testing**: **`pytest`** — prefer `uv run pytest` (or project-defined scripts).
 - **Imports**: **module top only**. No imports inside functions/methods/classes (incl. lazy imports). If circular import forces a redesign, refactor modules instead of hiding imports in bodies.
 
 ## Frontend (React / TypeScript)
 
 - **Package manager**: **`npm`** (matches Vite `create` defaults). Use `npm install`, `npm run dev`, `npm run build`, etc.
+- **API calls**: **`axios`** for HTTP requests to the backend.
 
 ## How agents should communicate (interview mode)
 
